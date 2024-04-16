@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 
 //the game layout is inspired by this video https://www.geeksforgeeks.org/videos/how-to-build-wordle-application-in-android/
+//GitHub link https://github.com/eelzaa/Wordle
 
 class MainActivity : AppCompatActivity() {
     private val wordList = WordList()  //read-only property of WordList class
