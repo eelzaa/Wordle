@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/guessFoodDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guess_the_food_or_drink"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.065" />
+
+
+    <TextView
+        android:id="@+id/youWinLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.788" />
+
+    <Button
+        android:id="@+id/button_newgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_editor"
+        android:text="@string/new_game"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <Button
+        android:id="@+id/button_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_editor"
+        android:text="@string/check"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="750dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="165dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/et11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et12"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/et21"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et22"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et23"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et25"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/et31"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et32"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et33"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et34"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et35"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/et41"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et42"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et43"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et44"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et45"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/et51"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et52"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et53"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et54"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et55"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/et61"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et62"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et63"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et64"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/et65"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_editor"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType=""
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

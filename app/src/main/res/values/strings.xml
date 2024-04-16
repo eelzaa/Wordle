@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wordle</string>
+    <string name="guess_the_food_or_drink">Guess the food or drink!</string>
+    <string name="you_win">You win!</string>
+    <string name="you_lost">You lost!</string>
+    <string name="new_game">New Game</string>
+    <string name="check">Check</string>
+    <string name="close">Close</string>
+</resources>
